@@ -1,12 +1,14 @@
-<template> 
-  <div>
-    <h1 class="text-blue-400 font-bold">UrGoCab App</h1>
-    <h2>test</h2>
-  </div>
+<template>
+  <NavBar />
 </template>
 
 <script>
-export default {};
-</script>
+import NavBar from "./components/NavBar.vue";
 
-<style lang="scss" scoped></style>
+export default {
+  name: "App",
+  components: {
+    NavBar,
+  },
+};
+</script>
