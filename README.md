@@ -1,10 +1,10 @@
 # UrGoCab
 
-This application is our <b>final project</b> for the <b>Front End Developer Course</b> using <b>Vue.js, Vue Router, API</b>and <b>Pinia</b>.
+This application is our <b>final project</b> for the <b>Front End Developer Course</b> using <b>Vue.js, Vue Router, API</b> and <b>Pinia</b>.
 
 ## About the App
 
-Say Hola to <b>UrGoCab</b>, a transport app that lets you get around the city with taxi or a private car with a driver.
+Say <i>Hola</i> to <b>UrGoCab</b>, a transport app that lets you get around the city with taxi or a private car with a driver.
 
 ## How does the UrGoCab work?
 
@@ -18,5 +18,5 @@ Say Hola to <b>UrGoCab</b>, a transport app that lets you get around the city wi
 
 5. Share your journey details to your loved ones so you feel safer each moment.
 
+APP DEVELOPERS:
 <i>Ailyn & Javier</i>
-<i>-developers-<i>
