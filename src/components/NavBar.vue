@@ -1,6 +1,6 @@
 <template>
-  <header class="w-full text-sm">
-    <div class="fixed top-0 left-0 h-16 w-full bg-yellow-100">
+  <header class="w-full text-sm mb-2">
+    <div class="top-0 left-0 h-16 w-full bg-yellow-100">
       <div
         class="flex justify-between flex-nowrap h-full border-b border-solid border-gray-400 px-10 mx-auto"
       >

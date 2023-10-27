@@ -1,8 +1,20 @@
 <template>
   <div id="app">
     <NavBar />
-    <Footer/>
-  
+    <div class="flex flex-col h-screen">
+      <div class="m-3 mb-auto">
+        <div class="grid grid-cols-2 gap-3 my-3">
+          <ServiceSelectLarge />
+          <ServiceSelectLarge />
+          <ServiceSelectLarge />
+          <ServiceSelectLarge />
+          <ServiceSelectLarge />
+          <ServiceSelectLarge />
+        </div>
+      </div>
+    </div>
+
+    <Footer />
   </div>
 </template>
 
@@ -15,7 +27,10 @@ export default {
   name: "App",
   components: {
     NavBar,
+    ServiceSelectLarge,
     Footer,
   },
 };
 </script>
+
+<style></style>
