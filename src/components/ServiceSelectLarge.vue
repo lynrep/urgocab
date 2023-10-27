@@ -1,22 +1,16 @@
 <template>
-    <div id="ServiceSelectLarge">
-        <div class="w-full rounded-2xl bg-custom-color custom-height">
-
-        </div>
+  <section>
+    <div>
+      <div class="w-full rounded-2xl bg-orange-300 h-28">Hola</div>
     </div>
+  </section>
 </template>
 
-<style lang="scss" scoped>
+<script>
+import ServiceSelectLarge from "../components/ServiceSelectLarge.vue";
+export default {
+  name: "ServiceSelectLarge",
+};
+</script>
 
-    #ServiceSelectLarge {
-
-        .bg-custom-color {
-        background-color: orangered;
-        }
-
-        .custome-height {
-            height: 100px;
-        }
-    }
-
-</style>
+<style></style>
