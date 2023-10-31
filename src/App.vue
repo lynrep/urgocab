@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavBar />
-    <HomeView />
+    <RouterView/>
     <Footer />
   </div>
 </template>
@@ -9,7 +9,7 @@
 <script>
 import Footer from "./components/Footer.vue";
 import NavBar from "./components/NavBar.vue";
-import HomeView from "./Views/HomeView.vue";
+import DirectionsView from './Views/DirectionsView.vue';
 
 
 export default {
@@ -17,7 +17,7 @@ export default {
   components: {
     NavBar,
     Footer,
-    HomeView,
+    DirectionsView,
   },
 };
 </script>
