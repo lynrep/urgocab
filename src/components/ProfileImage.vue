@@ -1,5 +1,5 @@
 <template>
-  <p class="flex h-full items-center py-2.5 text-blue-700">
+  <p class="flex h-full items-center py-2.5 text-teal-200">
     Welcome {{ user }}
   </p>
   <img

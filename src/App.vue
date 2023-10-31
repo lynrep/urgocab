@@ -1,19 +1,7 @@
 <template>
-  <div id="app">
+  <div>
     <NavBar />
-    <div class="flex flex-col h-screen">
-      <div class="m-3 mb-auto">
-        <div class="grid grid-cols-2 gap-3 my-3">
-          <ServiceSelectLarge />
-          <ServiceSelectLarge />
-          <ServiceSelectLarge />
-          <ServiceSelectLarge />
-          <ServiceSelectLarge />
-          <ServiceSelectLarge />
-        </div>
-      </div>
-    </div>
-
+    <HomeView />
     <Footer />
   </div>
 </template>
@@ -21,16 +9,16 @@
 <script>
 import Footer from "./components/Footer.vue";
 import NavBar from "./components/NavBar.vue";
-import ServiceSelectLarge from "./components/ServiceSelectLarge.vue";
+import HomeView from "./Views/HomeView.vue";
+
 
 export default {
   name: "App",
   components: {
     NavBar,
-    ServiceSelectLarge,
     Footer,
+    HomeView,
   },
 };
 </script>
 
-<style></style>

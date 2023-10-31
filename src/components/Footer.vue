@@ -1,15 +1,15 @@
 <template>
-  <footer class="mx-auto h-full w-full mt-10">
-    <div class="flex justify-between p-4 bg-yellow-100">
-      <p class="ml-10">
+  <footer class="mx-auto h-full w-full">
+    <div class="flex flex-col items-center p-4 bg-gray-700">
+      <div class="flex space-x-4">
+        <a href="#" class="text-teal-200 hover:text-teal-400">Home</a>
+        <a href="#" class="text-teal-200 hover:text-teal-400">About</a>
+        <a href="#" class="text-teal-200 hover:text-teal-400">Contact</a>
+      </div>
+      <p class="mt-4 text-teal-200">
         <i class="fa-regular fa-copyright"></i>2023 UrGoCab. All rights
         reserved.
       </p>
-      <div class="space-x-4 mr-10">
-        <a href="#" class="hover:text-gray-300">Home</a>
-        <a href="#" class="hover:text-gray-300">About</a>
-        <a href="#" class="hover:text-gray-300">Contact</a>
-      </div>
     </div>
   </footer>
 </template>
