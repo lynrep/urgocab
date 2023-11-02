@@ -7,29 +7,14 @@
           :text="serviceSelectText"
           :imageWidth="serviceSelectImg"
         />
-        <ServiceSelectLarge
-          :text="serviceSelectText"
-          :imageWidth="serviceSelectImg"
-        />
+        <ServiceSelectLarge text="Food" :imageWidth="serviceSelectImg" />
       </div>
       <!--4 Small Grids-->
       <div class="grid grid-cols-4 gap-3 my-3">
-        <ServiceSelectSmall
-          :text="serviceSelectText"
-          :imageWidth="serviceSelectImg"
-        />
-        <ServiceSelectSmall
-          :text="serviceSelectText"
-          :imageWidth="serviceSelectImg"
-        />
-        <ServiceSelectSmall
-          :text="serviceSelectText"
-          :imageWidth="serviceSelectImg"
-        />
-        <ServiceSelectSmall
-          :text="serviceSelectText"
-          :imageWidth="serviceSelectImg"
-        />
+        <ServiceSelectSmall text="2 Wheels" :imageWidth="serviceSelectImg" />
+        <ServiceSelectSmall text="Transit" :imageWidth="serviceSelectImg" />
+        <ServiceSelectSmall text="Reserve" :imageWidth="serviceSelectImg" />
+        <ServiceSelectSmall text="Travel" :imageWidth="serviceSelectImg" />
       </div>
 
       <div class="w-full bg-white h-14 rounded-full flex items-center p-3">
