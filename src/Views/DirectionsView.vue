@@ -19,19 +19,16 @@
             <div class="w-full h-5"></div>
             <div class="mb-2 mt-5">
                <AutoCompleteInput
-               theId="firstInput"
-               v-model:input="pickup"
-               placeholder="Enter pick-up location"
+               theId="firstInput" 
                @clearInput="clearInputFunc('firstInput')"
                @isActive="isPickupActive = true"
                />
+            <AutoCompleteInput/>
             </div>
 
             <div class="mb-3">
                <AutoCompleteInput
                theId="firstInput"
-               v-model:input="pickup"
-               placeholder="Enter pick-up location"
                @clearInput="clearInputFunc('firstInput')"
                @isActive="isPickupActive = true"
                />
@@ -49,7 +46,8 @@ import ArrowIcon from 'vue-material-design-icons/ArrowLeft.vue';
 
 export default {
   components: {
-    ArrowIcon
+    ArrowIcon,
+    AutoCompleteInput,
   },
   data() {
     return {
