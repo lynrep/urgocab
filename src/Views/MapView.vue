@@ -1,10 +1,10 @@
 <template>
-  <div id="mapView" class="flex flex-col h-screen bg-gray-300">
+  <div id="mapView" class="flex flex-col h-screen">
     <div id="map"></div>
   </div>
 </template>
 
-<script>
+<script setup>
 import { onMounted } from "vue";
 
 onMounted(() => {
@@ -14,21 +14,17 @@ onMounted(() => {
 });
 
 const initMap = () => {
-  const map = tt.map({
-    key: "DH91sqcc9iFTpWTV7XDyZQ1mf1tT92LY",
-    container: "map",
-    dragPan: !isMobileOrTablet(),
+  const map = new window.google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
   });
-
-  map.addControl(new tt.FullscreenControl());
-  map.addControl(new tt.NavigationControl());
 
   console.log(map);
 };
 </script>
 
 <style>
-#MapView {
+#mapView {
   #map {
     width: 100%;
     height: 45vh;
