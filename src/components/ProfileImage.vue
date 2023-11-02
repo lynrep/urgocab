@@ -1,11 +1,11 @@
 <template>
-  <p class="flex h-full items-center py-2.5 text-teal-200">
+  <p class="flex h-full items-center py-2.5 text-indigo-50">
     Welcome {{ user }}
   </p>
   <img
     :src="imageLink"
     alt="profile image"
-    class="rounded-3xl h-8 w-8 object-contain mt-4"
+    class="rounded-3xl h-10 w-10 object-contain mt-3"
   />
 </template>
 
