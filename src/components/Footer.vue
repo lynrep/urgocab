@@ -7,8 +7,26 @@
           class="text-indigo-50 hover:text-indigo-400"
           >Home</router-link
         >
-        <a href="#" class="text-indigo-50 hover:text-indigo-400">About</a>
-        <a href="#" class="text-indigo-50 hover:text-indigo-400">Contact</a>
+        <router-link
+          :to="{ name: 'directions' }"
+          class="text-indigo-50 hover:text-indigo-400"
+          >My Journey</router-link
+        >
+        <router-link
+          :to="{ name: 'map' }"
+          class="text-indigo-50 hover:text-indigo-400"
+          >Map</router-link
+        >
+        <router-link
+          :to="{ name: 'about' }"
+          class="text-indigo-50 hover:text-indigo-400"
+          >About</router-link
+        >
+        <router-link
+          :to="{ name: 'contact' }"
+          class="text-indigo-50 hover:text-indigo-400"
+          >Contact</router-link
+        >
       </div>
       <p class="mt-4 text-indigo-200">
         <i class="fa-regular fa-copyright"></i>2023 UrGoCab. All rights
@@ -20,6 +38,11 @@
 
 <script>
 import HomeView from "../Views/HomeView.vue";
+import AboutView from "../Views/AboutView.vue";
+import ContactView from "../Views/ContactView.vue";
+import DirectionsView from "../Views/DirectionsView.vue";
+import MapView from "../Views/MapView.vue";
+
 export default {
   name: "Footer",
 };
