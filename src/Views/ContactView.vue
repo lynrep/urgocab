@@ -13,7 +13,7 @@
         <h2 class="text-xl text-center text-indigo-200">
           <span class="text-4xl text-indigo-50">Javier</span> is a man on a
           mission in Ireland right now. He will continue his career in
-          Engineering improving both his techinical skills and communication
+          Engineering improving both his technical skills and communication
           skills.
         </h2>
       </div>
