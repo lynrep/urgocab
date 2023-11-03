@@ -15,7 +15,7 @@
         <ServiceSelectSmall text="Ride" imageWidth="54" image="2paxcar" />
         <ServiceSelectSmall text="Transit" imageWidth="64" image="transit" />
         <ServiceSelectSmall
-          text="Reserve"
+          text="Reservation"
           imageWidth="54"
           image="reservation"
         />
