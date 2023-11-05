@@ -12,7 +12,11 @@
       </div>
       <!--4 Small Grids-->
       <div class="grid grid-cols-4 gap-3 my-3">
-        <ServiceSelectSmall text="Ride" imageWidth="54" image="2paxcar" />
+        <ServiceSelectSmall
+          text="Weather"
+          imageWidth="50"
+          image="weather-news"
+        />
         <ServiceSelectSmall text="Transit" imageWidth="64" image="transit" />
         <ServiceSelectSmall
           text="Reservation"
@@ -23,8 +27,8 @@
       </div>
 
       <div class="mt-6 w-full bg-white h-14 rounded-full flex items-center p-3">
-        <MagnifyIcon :size="40" class="text-indigo-600" />
-        <div class="ml-3 text-indigo-600 text-lg">Pick-up point</div>
+        <MagnifyIcon :size="40" class="text-indigo-200" />
+        <div class="ml-3 text-indigo-200 text-lg">Pick-up point...</div>
       </div>
     </div>
   </div>
@@ -34,12 +38,14 @@
 import ServiceSelectLarge from "/src/components/ServiceSelectLarge.vue";
 import ServiceSelectSmall from "/src/components/ServiceSelectSmall.vue";
 import MagnifyIcon from "vue-material-design-icons/Magnify.vue";
+import WeatherView from "/src/Views/WeatherView.vue";
 
 export default {
   name: "HomeView",
   components: {
     ServiceSelectLarge,
     ServiceSelectSmall,
+    WeatherView,
     MagnifyIcon,
   },
   data() {

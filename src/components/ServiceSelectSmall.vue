@@ -6,7 +6,7 @@
       <!--main features-->
 
       <div
-        class="absolute top-1/3 left-1/3 transform -translate-x-1/4 -translate-y-1/4 mt-0.5"
+        class="absolute top-1/3 left-1/2 transform -translate-x-1/4 -translate-y-1/4 mt-0.5"
       >
         <img :width="imageWidth" :src="'Img/' + image + '.png'" />
       </div>
