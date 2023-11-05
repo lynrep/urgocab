@@ -17,7 +17,13 @@
           class="flex h-full font-extrabold text-xl text-sky-100 space-x-6 ml-10"
         >
           <ProfileImage v-if="isLoggedIn" />
-          <LogIn v-else text="Sign In" @click="loginUser" />
+          <router-link
+            :to="{ name: 'register' }"
+            v-else
+            text="Sign In"
+            @click="registerUser"
+            class="py-4"
+          ></router-link>
         </div>
       </div>
     </div>
@@ -26,14 +32,16 @@
 
 <script>
 import HomeView from "../Views/HomeView.vue";
-import LogIn from "./LogIn.vue";
+import LogInView from "../Views/LogInView.vue";
+import RegisterView from "../Views/RegisterView.vue";
 import ProfileImage from "./ProfileImage.vue";
 
 export default {
   name: "NavBar",
   components: {
-    LogIn,
+    LogInView,
     ProfileImage,
+    RegisterView,
   },
   data() {
     return {

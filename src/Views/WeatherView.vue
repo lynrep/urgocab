@@ -242,7 +242,7 @@ body {
 .weather-icon {
   display: inline-block;
   padding: 10px 25px;
-  height: 200px;
-  width: 200px;
+  height: 25em;
+  width: 25em;
 }
 </style>
