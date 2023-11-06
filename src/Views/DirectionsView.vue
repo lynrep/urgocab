@@ -48,10 +48,11 @@ import ArrowIcon from "vue-material-design-icons/ArrowLeft.vue";
 export default {
   components: {
     ArrowIcon,
+    AutoCompleteInput,
   },
   data() {
     return {
-      isPickupActive: true,
+      isPickupActive: false,
       pickup: "",
     };
   },

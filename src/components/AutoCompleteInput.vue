@@ -3,13 +3,13 @@
     <input 
         :id="theId"
         v-model="inputComputed"
-        @click="emit('isActive', true)"
+        @click="isActive = true"
         class="
             text-md
             bg-gray-100
             appearance-none 
             rounded 
-            w-full 
+            w-96  
             py-2.5
             px-3
             text-gray-700 
@@ -24,13 +24,13 @@
     >
       <WindowCloseIcon 
       fillColor="#2e2e2d" 
-      @click="$emit('clearInput')" 
+      @click="clearInput" 
       />
    </div>
 </template>
 
 <script>
-
+import { computed, defineEmits, defineProps, toRefs } from 'vue';
 import WindowCloseIcon from 'vue-material-design-icons/WindowClose.vue';
 
 export default {
@@ -61,7 +61,6 @@ export default {
   }
 }
 </script>
-
 <style>
   
 </style>
