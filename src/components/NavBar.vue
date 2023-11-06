@@ -17,6 +17,7 @@
           class="flex h-full font-extrabold text-xl text-sky-100 space-x-6 ml-10"
         >
           <ProfileImage v-if="isLoggedIn" />
+          <LogInView v-if="isLoggedIn" />
           <router-link
             :to="{ name: 'register' }"
             v-else
