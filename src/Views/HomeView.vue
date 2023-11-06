@@ -3,20 +3,26 @@
     <div class="m-3 mb-auto">
       <!--2 Large Grids-->
       <div class="grid grid-cols-2 gap-3 my-3">
-        <ServiceSelectLarge
-          text="Journey"
-          imageWidth="74"
-          image="journey_new"
-        />
+        <RouterLink :to="{ name: 'directions' }">
+          <ServiceSelectLarge
+            text="Journey"
+            imageWidth="74"
+            image="journey_new"
+          />
+        </RouterLink>
+
         <ServiceSelectLarge text="Food" imageWidth="74" image="burger" />
       </div>
       <!--4 Small Grids-->
       <div class="grid grid-cols-4 gap-3 my-3">
-        <ServiceSelectSmall
-          text="Weather"
-          imageWidth="50"
-          image="weather-news"
-        />
+        <RouterLink :to="{ name: 'weather' }">
+          <ServiceSelectSmall
+            text="Weather"
+            imageWidth="50"
+            image="weather-news"
+          />
+        </RouterLink>
+
         <ServiceSelectSmall text="Transit" imageWidth="64" image="transit" />
         <ServiceSelectSmall
           text="Reservation"
@@ -47,12 +53,6 @@ export default {
     ServiceSelectSmall,
     WeatherView,
     MagnifyIcon,
-  },
-  data() {
-    return {
-      serviceSelectText: "My Journey",
-      serviceSelectImg: "",
-    };
   },
 };
 </script>

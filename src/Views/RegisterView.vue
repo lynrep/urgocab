@@ -67,7 +67,6 @@
           />
         </div>
         <div class="mt-8">
-          <LogInView v-if="isLoggedIn" />
           <router-link
             :to="{ name: 'login' }"
             text="Login"
