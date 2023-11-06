@@ -6,6 +6,7 @@ import MapView from "./Views/MapView.vue";
 import WeatherView from "./Views/WeatherView.vue";
 import RegisterView from "./Views/RegisterView.vue";
 import LogInView from "./Views/LogInView.vue";
+import FoodView from "./Views/FoodView.vue";
 
 export const routes = [
   {
@@ -47,5 +48,10 @@ export const routes = [
     path: "/login",
     name: "login",
     component: LogInView,
+  },
+  {
+    path: "/food",
+    name: "food",
+    component: FoodView,
   },
 ];

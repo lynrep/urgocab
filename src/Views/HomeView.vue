@@ -11,7 +11,9 @@
           />
         </RouterLink>
 
-        <ServiceSelectLarge text="Food" imageWidth="74" image="burger" />
+        <RouterLink :to="{ name: 'food' }">
+          <ServiceSelectLarge text="Food" imageWidth="74" image="burger" />
+        </RouterLink>
       </div>
       <!--4 Small Grids-->
       <div class="grid grid-cols-4 gap-3 my-3">
@@ -45,6 +47,7 @@ import ServiceSelectLarge from "/src/components/ServiceSelectLarge.vue";
 import ServiceSelectSmall from "/src/components/ServiceSelectSmall.vue";
 import MagnifyIcon from "vue-material-design-icons/Magnify.vue";
 import WeatherView from "/src/Views/WeatherView.vue";
+import FoodView from "/src/Views/FoodView.vue";
 
 export default {
   name: "HomeView",
@@ -53,6 +56,7 @@ export default {
     ServiceSelectSmall,
     WeatherView,
     MagnifyIcon,
+    FoodView,
   },
 };
 </script>
