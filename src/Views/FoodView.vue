@@ -3,7 +3,7 @@
     <h1 class="font-bold italic text-8xl text-indigo-100 mt-60">
       Still Cooking...
     </h1>
-    <img src="/public/Img/foodView.png" class="w-80 h-80" />
+    <img src="/Img/foodView.png" class="w-80 h-80" />
   </div>
 </template>
 

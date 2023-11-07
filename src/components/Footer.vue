@@ -1,7 +1,7 @@
 <template>
   <footer class="mx-auto h-full w-full">
     <div class="flex flex-col items-center p-4 bg-indigo-800">
-      <div class="flex space-x-4">
+      <div class="flex space-x-4 text-lg">
         <router-link
           :to="{ name: 'home' }"
           class="text-indigo-50 hover:text-indigo-400"
@@ -28,7 +28,7 @@
           >Contact</router-link
         >
       </div>
-      <p class="mt-4 text-indigo-200">
+      <p class="mt-4 text-indigo-200 text-xs">
         <i class="fa-regular fa-copyright"></i>2023 UrGoCab. All rights
         reserved.
       </p>
