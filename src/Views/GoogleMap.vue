@@ -6,8 +6,9 @@
       :center="{ lat: lat, lng: lng }"
       :zoom="17"
     >
-      <Marker :options="{ position: origin }" />
-      <Marker :options="{ position: destination }" />
+      <Marker :options="{ position: { lat: lat, lng: lng }, label }" />
+
+      <Marker :options="{ position: { lat: lat, lng: lng } }" />
     </GoogleMap>
 
     <div class="flex justify-between">
@@ -44,19 +45,12 @@ import { ref } from "vue";
 import { GoogleMap, Marker } from "vue3-google-map";
 import GoogleAddressAutocomplete from "vue3-google-address-autocomplete";
 
-const origin = ref("");
-const destination = ref("");
-
 export default {
   components: { GoogleMap, Marker, GoogleAddressAutocomplete },
   data() {
     return {
-      origin: "",
-      destination: "",
       lat: null,
       lng: null,
-      markers: [],
-      paths: [],
     };
   },
   created() {

@@ -1,7 +1,5 @@
 <template>
-  <p class="flex h-full items-center py-2.5 text-indigo-50">
-    Welcome {{ user }}
-  </p>
+  <p class="flex h-full items-center py-2.5 text-indigo-500">Welcome User</p>
   <img
     :src="imageLink"
     alt="profile image"
@@ -14,7 +12,6 @@ export default {
   name: "ProfileImage",
   data() {
     return {
-      user: "User",
       imageLink:
         "https://png.pngtree.com/png-clipart/20201208/original/pngtree-cute-taxi-character-cartoon-style-png-image_5511468.jpg",
     };

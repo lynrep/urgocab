@@ -1,7 +1,7 @@
-<!--<template>
-  <div <div id="register" class="py-40 h-screen">
+<template>
+  <div id="register" class="py-40 h-screen bg-indigo-500">
     <div
-      class="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl"
+      class="flex bg-indigo-200 rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl"
     >
       <div
         class="hidden lg:block lg:w-1/2 bg-cover"
@@ -43,8 +43,10 @@
         </a>
         <div class="mt-4 flex items-center justify-between">
           <span class="border-b w-1/5 lg:w-1/4"></span>
-          <a href="#" class="text-xs text-center text-gray-500 uppercase"
-            >or login with email</a
+          <router-link
+            :to="{ name: 'login' }"
+            class="text-xs text-center text-gray-500 uppercase"
+            >or login with email</router-link
           >
           <span class="border-b w-1/5 lg:w-1/4"></span>
         </div>
@@ -75,62 +77,49 @@
           />
         </div>
         <div v-if="errorMsg">{{ errorMsg }}</div>
-        <div><button @click="register">Submit</button></div>
+
         <div class="mt-8">
           <router-link
-            :to="{ name: 'login' }"
-            text="Login"
-            class="bg-indigo-700 text-white font-bold py-2 px-4 rounded hover:bg-indigo-500"
+            :to="{ name: 'feed' }"
+            text="Submit"
+            class="bg-indigo-700 text-white text-center font-bold py-2 px-4 rounded hover:bg-indigo-500 w-full block"
             @click="loginUser"
           ></router-link>
         </div>
-        <div class="mt-4 flex items-center justify-between">
-          <span class="border-b w-1/5 md:w-1/4"></span>
-          <a href="#" class="text-xs text-gray-500 uppercase" value="Register"
-            >or sign up</a
-          >
-          <span class="border-b w-1/5 md:w-1/4"></span>
-        </div>
       </div>
     </div>
-  </div> 
-</template>-->
-
-<template>
-  <div class="flex flex-col h-screen bg-indigo-800">
-    <h1>Sign Up</h1>
-    <input type="email" placeholder="Email" v-model="email" />
-    <input type="password" placeholder="Password" v-model="password" />
-    <button @click="register">Login</button>
   </div>
 </template>
 
-<script>
-//import firebase from "firebase";
+<script setup>
+import { updateData, getData } from "/src/firebase.js";
+import { ref } from "vue";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
+} from "firebase/auth";
+import { useRouter } from "vue-router";
 
-export default {
-  name: "RegisterView",
-  data() {
-    return {
-      email: "",
-      password: "",
-      initials: "",
-    };
-  },
-  methods: {
-    register() {
-      firebase
-        .auth()
-        .createUserWithEmailAndPassword(this.email, this.password)
-        .then(
-          (user) => {
-            console.log(user);
-          },
-          (err) => {
-            alert(err);
-          }
-        );
-    },
-  },
+const email = ref("");
+const password = ref("");
+const router = useRouter();
+
+const register = () => {
+  createUserWithEmailAndPassword(getAuth(), email.value, password.value)
+    .then((data) => {
+      console.log("Successfully registered!");
+      router.push("/src/Views/FeedView.vue");
+    })
+    .catch((error) => {
+      console.log(error.code);
+      alert(error.message);
+    });
+};
+
+const signInWithGoogle = () => {
+  const provider = new GoogleAuthProvider();
+  signInWithPopup(getAuth(), provider);
 };
 </script>
