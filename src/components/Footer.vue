@@ -8,14 +8,9 @@
           >Home</router-link
         >
         <router-link
-          :to="{ name: 'directions' }"
+          :to="{ name: 'googlemap' }"
           class="text-indigo-50 hover:text-indigo-400"
           >My Journey</router-link
-        >
-        <router-link
-          :to="{ name: 'map' }"
-          class="text-indigo-50 hover:text-indigo-400"
-          >Map</router-link
         >
         <router-link
           :to="{ name: 'about' }"
@@ -29,7 +24,7 @@
         >
       </div>
       <p class="mt-4 text-indigo-200 text-xs">
-        <i class="fa-regular fa-copyright"></i>2023 UrGoCab. All rights
+        <i class="fa-regular fa-copyright"></i>2023 UrTravelApp. All rights
         reserved.
       </p>
     </div>
@@ -40,8 +35,7 @@
 import HomeView from "../Views/HomeView.vue";
 import AboutView from "../Views/AboutView.vue";
 import ContactView from "../Views/ContactView.vue";
-import DirectionsView from "../Views/DirectionsView.vue";
-import MapView from "../Views/MapView.vue";
+import GoogleMap from "../Views/GoogleMap.vue";
 
 export default {
   name: "Footer",

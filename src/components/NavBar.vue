@@ -46,7 +46,7 @@ export default {
   },
   data() {
     return {
-      company: "UrGoCab",
+      company: "UrTravelApp",
       isLoggedIn: false,
     };
   },
