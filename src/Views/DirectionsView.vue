@@ -25,22 +25,22 @@
             v-model:input="pickup"
             placeholder="Enter pick-up location"
             @clearInput="clearInputFunc('firstInput')"
-            @isActive="isPickupActive"
+            @isActive="isPickupActive = true"
           />
         </div>
 
         <div class="mb-3">
           <AutoCompleteInput
             theId="secondInput"
-            v-model:input="pickup"
+            v-model:input="destination"
             placeholder="Where to?"
-            @clearInput="clearInputFunc('firstInput')"
-            @isActive="!isPickupActive"
+            @clearInput="clearInputFunc('secondInput')"
+            @isActive="isPickupActive = false"
           />
         </div>
       </div>
     </div>
-    <div class="flex items-center costom-border-bottom bg-gray-200">
+    <div class="flex items-center bg-gray-200 ml-10 mr-10">
       <div class="bg-gray-400 mx-5 my-3.5 p-1.5 rounded-full">
         <MapMarkerIcon :size="30" fillcolor="#f5f5f5" />
       </div>
@@ -59,18 +59,18 @@
 import AutoCompleteInput from "../components/AutoCompleteInput.vue";
 import ArrowIcon from "vue-material-design-icons/ArrowLeft.vue";
 import MapMarkerIcon from "vue-material-design-icons/MapMarker.vue";
+import { ref } from "vue";
+
+let isPickupActive = ref(true);
+
+let pickup = ref("");
+let destination = ref("");
 
 export default {
   components: {
     ArrowIcon,
     AutoCompleteInput,
     MapMarkerIcon,
-  },
-  data() {
-    return {
-      isPickupActive: true,
-      pickup: "",
-    };
   },
 };
 // New!!!!!!!!!!!!!!!

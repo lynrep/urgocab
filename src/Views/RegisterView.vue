@@ -1,5 +1,5 @@
-<template>
-  <div id="register" class="py-40 h-screen">
+<!--<template>
+  <div <div id="register" class="py-40 h-screen">
     <div
       class="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl"
     >
@@ -34,7 +34,10 @@
               />
             </svg>
           </div>
-          <h1 class="px-4 py-3 w-5/6 text-center text-gray-600 font-bold">
+          <h1
+            @click="signInWithGoogle"
+            class="px-4 py-3 w-5/6 text-center text-gray-600 font-bold"
+          >
             Sign in with Google
           </h1>
         </a>
@@ -51,7 +54,9 @@
           >
           <input
             class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none"
-            type="email"
+            type="text"
+            v-model="email"
+            placeholder="Email"
           />
         </div>
         <div class="mt-4">
@@ -64,8 +69,13 @@
           <input
             class="bg-gray-200 text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none"
             type="password"
+            v-model="password"
+            autocomplete="off"
+            placeholder="Password"
           />
         </div>
+        <div v-if="errorMsg">{{ errorMsg }}</div>
+        <div><button @click="register">Submit</button></div>
         <div class="mt-8">
           <router-link
             :to="{ name: 'login' }"
@@ -76,33 +86,51 @@
         </div>
         <div class="mt-4 flex items-center justify-between">
           <span class="border-b w-1/5 md:w-1/4"></span>
-          <a href="#" class="text-xs text-gray-500 uppercase">or sign up</a>
+          <a href="#" class="text-xs text-gray-500 uppercase" value="Register"
+            >or sign up</a
+          >
           <span class="border-b w-1/5 md:w-1/4"></span>
         </div>
       </div>
     </div>
+  </div> 
+</template>-->
+
+<template>
+  <div class="flex flex-col h-screen bg-indigo-800">
+    <h1>Sign Up</h1>
+    <input type="email" placeholder="Email" v-model="email" />
+    <input type="password" placeholder="Password" v-model="password" />
+    <button @click="register">Login</button>
   </div>
 </template>
 
 <script>
-import LogInView from "../Views/LogInView.vue";
+//import firebase from "firebase";
 
 export default {
   name: "RegisterView",
-  components: {
-    LogInView,
-  },
   data() {
     return {
-      isLoggedIn: false,
+      email: "",
+      password: "",
+      initials: "",
     };
   },
   methods: {
-    loginUser() {
-      this.isLoggedIn = true;
+    register() {
+      firebase
+        .auth()
+        .createUserWithEmailAndPassword(this.email, this.password)
+        .then(
+          (user) => {
+            console.log(user);
+          },
+          (err) => {
+            alert(err);
+          }
+        );
     },
   },
 };
 </script>
-
-<style></style>

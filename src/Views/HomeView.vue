@@ -3,7 +3,7 @@
     <div class="m-3 mb-auto">
       <!--2 Large Grids-->
       <div class="grid grid-cols-2 gap-3 my-3">
-        <RouterLink :to="{ name: 'directions' }">
+        <RouterLink :to="{ name: 'googlemap' }">
           <ServiceSelectLarge
             text="Journey"
             imageWidth="74"
@@ -25,45 +25,23 @@
           />
         </RouterLink>
 
-        <ServiceSelectSmall text="Transit" imageWidth="64" image="transit" />
-        <ServiceSelectSmall
-          text="Reservation"
-          imageWidth="54"
-          image="reservation"
-        />
+        <RouterLink :to="{ name: 'map' }"
+          ><ServiceSelectSmall text="Ride" imageWidth="64" image="ride"
+        /></RouterLink>
+
+        <RouterLink :to="{ name: 'planner' }">
+          <ServiceSelectSmall
+            text="Planner"
+            imageWidth="54"
+            image="reservation"
+          />
+        </RouterLink>
         <ServiceSelectSmall text="Travel" imageWidth="54" image="travel" />
       </div>
 
       <div class="mt-6 w-full bg-white h-14 rounded-full flex items-center p-3">
         <MagnifyIcon :size="40" class="text-indigo-200" />
         <div class="ml-3 text-indigo-200 text-lg">Pick-up point...</div>
-      </div>
-    </div>
-
-    <div
-      class="
-        w-full
-        z-50
-        flex
-        justify-around
-        p-1
-        mb-2
-        border-t-2
-        border-t-gray-200
-        border-b-2
-      "
-    >
-      <div class="grid place-items-center">
-      <HomeIcon :size="30" fillColor="#1f1e1e"/>
-        <div class="w-full -mt-1 text-xs text-center text-gray-800 font-semibold">
-          Home
-        </div>
-      </div>
-      <div class="grid place-items-center">
-      <MapMarkerIcon :size="30" fillColor="#1f1e1e"/>
-        <div class="w-full -mt-1 text-xs text-center text-gray-800 font-semibold">
-          Destination
-        </div>
       </div>
     </div>
   </div>
@@ -74,9 +52,10 @@ import ServiceSelectLarge from "/src/components/ServiceSelectLarge.vue";
 import ServiceSelectSmall from "/src/components/ServiceSelectSmall.vue";
 import MagnifyIcon from "vue-material-design-icons/Magnify.vue";
 import HomeIcon from "vue-material-design-icons/Home.vue";
-import MapMarkerIcon from "vue-material-design-icons/MapMarker.vue"
+import MapMarkerIcon from "vue-material-design-icons/MapMarker.vue";
 import WeatherView from "/src/Views/WeatherView.vue";
 import FoodView from "/src/Views/FoodView.vue";
+import MapView from "/src/Views/MapView.vue";
 
 export default {
   name: "HomeView",
@@ -88,6 +67,7 @@ export default {
     FoodView,
     HomeIcon,
     MapMarkerIcon,
+    MapView,
   },
 };
 </script>

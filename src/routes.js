@@ -6,7 +6,10 @@ import MapView from "./Views/MapView.vue";
 import WeatherView from "./Views/WeatherView.vue";
 import RegisterView from "./Views/RegisterView.vue";
 import LogInView from "./Views/LogInView.vue";
+import FeedView from "./Views/FeedView.vue";
 import FoodView from "./Views/FoodView.vue";
+import GoogleMap from "./Views/GoogleMap.vue";
+import PlannerView from "./Views/PlannerView.vue";
 
 export const routes = [
   {
@@ -50,8 +53,23 @@ export const routes = [
     component: LogInView,
   },
   {
+    path: "/feed",
+    name: "feed",
+    component: FeedView,
+  },
+  {
     path: "/food",
     name: "food",
     component: FoodView,
+  },
+  {
+    path: "/googlemap",
+    name: "googlemap",
+    component: GoogleMap,
+  },
+  {
+    path: "/planner",
+    name: "planner",
+    component: PlannerView,
   },
 ];

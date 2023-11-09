@@ -9,7 +9,7 @@
       :placeholder="placeholder"
       autocomplete="off"
     />
-    <WindowCloseIcon fillColor="#2e2e2d" @click="clearInput" />
+    <WindowCloseIcon @click="$emit('clearInput')" fillcolor="#2e2e2d" />
   </div>
 </template>
 
@@ -17,32 +17,19 @@
 import { computed, defineEmits, defineProps, toRefs } from "vue";
 import WindowCloseIcon from "vue-material-design-icons/WindowClose.vue";
 
-export default {
-  components: {
-    WindowCloseIcon,
-  },
-  props: {
-    theId: String,
-    input: String,
-    placeholder: String,
-  },
-  setup(props) {
-    const emit = defineEmits(["update:input", "clearInput", "isActive"]);
+const emit = defineEmits(["update:input", "clearInput", "isActive"]);
 
-    const { theId, input, placeholder } = toRefs(props);
+const props = defineProps({
+  theId: String,
+  input: String,
+  placeholder: String,
+});
 
-    const inputComputed = computed({
-      get: () => input.value,
-      set: (val) => emit("update:input", val),
-    });
+const { theId, input, placeholder } = toRefs(props);
 
-    return {
-      theId,
-      input,
-      placeholder,
-      inputComputed,
-    };
-  },
-};
+const inputComputed = computed({
+  get: () => input.value,
+  set: (val) => emit("update:input", val),
+});
 </script>
 <style></style>
