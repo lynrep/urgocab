@@ -7,22 +7,24 @@
         <!--Company Name-->
         <router-link
           :to="{ name: 'home' }"
-          class="flex h-full items-center font-extrabold text-sky-100 text-2xl"
+          class="flex h-full items-center font-extrabold text-sky-100 text-xl"
           >{{ company }}
           <img class="w-14 h-14" src="Img/logo.png" alt="logo" />
         </router-link>
 
-        <!--LogIn items-->
-        <div
-          class="flex h-full font-extrabold text-xl text-sky-100 space-x-6 ml-10"
-        >
-          <ProfileImage v-if="isLoggedIn" />
-          <LogInView v-if="isLoggedIn" />
+        <!--Register items-->
+        <div class="flex h-full font-extrabold text-xl text-sky-100 space-x-4">
           <router-link
             :to="{ name: 'register' }"
-            v-else
-            text="Sign In"
+            text="Register"
             @click="registerUser"
+            class="py-4"
+          ></router-link>
+
+          <router-link
+            :to="{ name: 'login' }"
+            text="Log In"
+            @click="loginUser"
             class="py-4"
           ></router-link>
         </div>
@@ -43,6 +45,7 @@ export default {
     LogInView,
     ProfileImage,
     RegisterView,
+    HomeView,
   },
   data() {
     return {

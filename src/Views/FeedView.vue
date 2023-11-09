@@ -1,5 +1,8 @@
 <template>
-  <div id="feed" class="py-40 h-screen"></div>
+  <ProfileImage />
+  <div id="feed" class="h-screen bg-indigo-500">
+    <button @click="handleSignOut">Sign out</button>
+  </div>
 </template>
 
 <script>

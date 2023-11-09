@@ -1,7 +1,8 @@
 <template>
   <div>
-    <NavBar />
-    <RouterView/>
+    <ProfileImage v-if="isLoggedIn" />
+    <NavBar v-else="!isLoggedIn" />
+    <RouterView />
     <Footer />
   </div>
 </template>
@@ -9,16 +10,19 @@
 <script>
 import Footer from "./components/Footer.vue";
 import NavBar from "./components/NavBar.vue";
-import DirectionsView from './Views/DirectionsView.vue';
-
+import ProfileImage from "./components/ProfileImage.vue";
 
 export default {
   name: "App",
   components: {
     NavBar,
     Footer,
-    DirectionsView,
+    ProfileImage,
+  },
+  methods: {
+    loginUser() {
+      this.isLoggedIn = true;
+    },
   },
 };
 </script>
-

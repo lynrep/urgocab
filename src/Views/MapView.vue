@@ -6,7 +6,7 @@
       <div
         class="w-full text-center border-t-2 p-1.5 text-indigo-700 text-lg font-semibold"
       >
-        Distance - 30
+        Distance
       </div>
 
       <div class="chooseCar">
@@ -16,7 +16,7 @@
             <div class="w-full ml-3">
               <div class="flex items-center justify-between">
                 <div class="text-2xl mb-1 text-indigo-800">2-Seater</div>
-                <div class="text-xl text-indigo-800">$55</div>
+                <div class="text-xl text-indigo-800">€55</div>
               </div>
               <div class="text-indigo-400">8 hours</div>
             </div>
@@ -29,7 +29,7 @@
             <div class="w-full ml-3">
               <div class="flex items-center justify-between">
                 <div class="text-2xl mb-1 text-indigo-800">4-Seater</div>
-                <div class="text-xl text-indigo-800">$75</div>
+                <div class="text-xl text-indigo-800">€75</div>
               </div>
               <div class="text-indigo-400">8 hours</div>
             </div>
@@ -42,7 +42,7 @@
             <div class="w-full ml-3">
               <div class="flex items-center justify-between">
                 <div class="text-2xl mb-1 text-indigo-800">6-Seater</div>
-                <div class="text-xl text-indigo-800">$100</div>
+                <div class="text-xl text-indigo-800">€100</div>
               </div>
               <div class="text-indigo-400">8 hours</div>
             </div>
@@ -55,7 +55,7 @@
             <div class="w-full ml-3">
               <div class="flex items-center justify-between">
                 <div class="text-2xl mb-1 text-indigo-800">12-Seater</div>
-                <div class="text-xl text-indigo-800">$150</div>
+                <div class="text-xl text-indigo-800">€150</div>
               </div>
               <div class="text-indigo-400">8 hours</div>
             </div>
@@ -66,6 +66,7 @@
           class="flex items-center justify-center bg-white py-6 px-4 w-full bottom-0 shadow-inner"
         >
           <button
+            @click="orderRide"
             class="bg-indigo-500 text-2xl text-white py-4 px-4 rounded-lg w-full"
           >
             Order Ride
