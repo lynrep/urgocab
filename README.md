@@ -1,10 +1,10 @@
 # UrGoCab
 
-This application is our <b>final project</b> for the <b>Front End Developer Course</b> using <b>Vue.js, Vue Router, API</b> and <b>Pinia</b>.
+This application is our <b>final project</b> for the <b>Front End Developer Course</b> using <b>Vue.js, Vue Router, API</b> and <b>Firebase</b>.
 
 ## About the App
 
-Say <i>Hola</i> to <b>UrGoCab</b>, a transport app that lets you get around the city with taxi or a private car with a driver.
+Say <i>Hola</i> to <b>UrTravelApp</b>, a perfect travel companion app that lets you organized your travel plans, get around the city and personalized your travel ideas.
 
 ## How does the UrGoCab work?
 

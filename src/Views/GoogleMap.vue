@@ -1,7 +1,7 @@
 <template>
   <div id="googlemap" class="flex flex-col h-screen">
     <GoogleMap
-      api-key="AIzaSyDTFA_f4VLzoz5H6nWWO1QnkKMtuINCexA"
+      api-key="GOOGLE_MAPS_API_KEY"
       style="width: 100%; height: 500px"
       :center="{ lat: lat, lng: lng }"
       :zoom="17"
@@ -12,14 +12,12 @@
 
     <div class="flex justify-between">
       <GoogleAddressAutocomplete
-        apiKey="AIzaSyDTFA_f4VLzoz5H6nWWO1QnkKMtuINCexA"
         v-model="origin"
         class="bg-indigo-500 text-xl py-4 px-4 rounded-lg w-full m-4 text-indigo-50"
         placeholder="Enter origin"
       />
 
       <GoogleAddressAutocomplete
-        apiKey="AIzaSyDTFA_f4VLzoz5H6nWWO1QnkKMtuINCexA"
         v-model="destination"
         class="bg-indigo-500 text-xl py-4 px-4 rounded-lg w-full m-4 text-indigo-50"
         placeholder="Enter destination"
