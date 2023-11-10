@@ -1,6 +1,6 @@
 <template>
   <footer class="mx-auto h-full w-full">
-    <div class="flex flex-col items-center p-4 bg-indigo-800">
+    <div class="flex flex-col items-center p-4 bg-indigo-600">
       <div class="flex space-x-4 text-lg">
         <router-link
           :to="{ name: 'home' }"

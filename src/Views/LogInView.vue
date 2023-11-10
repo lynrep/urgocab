@@ -1,10 +1,10 @@
 <template>
   <main
-    class="flex flex-col h-screen bg-indigo-800 mx-auto w-full items-center justify-center"
+    class="flex flex-col h-screen bg-indigo-600 mx-auto w-full items-center justify-center"
   >
     <!-- component -->
     <section class="flex w-[30rem] flex-col space-y-10">
-      <div class="text-center text-4xl font-medium">Log In</div>
+      <div class="text-center text-4xl font-medium text-indigo-300">Log In</div>
 
       <div
         class="w-full transform border-b-2 bg-transparent text-lg duration-300 focus-within:border-indigo-500"

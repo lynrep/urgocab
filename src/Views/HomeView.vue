@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="flex flex-col h-screen bg-indigo-800">
+  <div id="home" class="flex flex-col h-screen bg-indigo-500">
     <div class="m-3 mb-auto">
       <!--2 Large Grids-->
       <div class="grid grid-cols-2 gap-3 my-3">
