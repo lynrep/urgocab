@@ -1,5 +1,5 @@
 <template>
-  <div id="weather" class="flex flex-col h-screen bg-indigo-800">
+  <div id="weather" class="flex flex-col h-screen bg-indigo-600">
     <div class="search-box">
       <input
         type="text"
@@ -242,7 +242,7 @@ body {
 .weather-icon {
   display: inline-block;
   padding: 10px 25px;
-  height: 20em;
-  width: 20em;
+  height: 15em;
+  width: 15em;
 }
 </style>

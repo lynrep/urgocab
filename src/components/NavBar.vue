@@ -1,8 +1,8 @@
 <template>
   <header class="w-full text-sm">
-    <div class="top-0 left-0 h-16 w-full bg-indigo-800">
+    <div class="top-0 left-0 h-16 w-full bg-indigo-500">
       <div
-        class="flex justify-between flex-nowrap h-full border-b border-solid bg-indigo-800 px-10 mx-auto"
+        class="flex justify-between flex-nowrap h-full border-b border-solid bg-indigo-500 px-10 mx-auto"
       >
         <!--Company Name-->
         <router-link

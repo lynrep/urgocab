@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="flex flex-col h-screen bg-indigo-800 items-center">
+  <div id="home" class="flex flex-col h-screen bg-indigo-500 items-center">
     <h1 class="font-bold italic text-8xl text-indigo-100 mt-60">
       Still Cooking...
     </h1>

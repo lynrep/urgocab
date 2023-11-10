@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="flex flex-col h-screen bg-indigo-800">
+  <div id="about" class="flex flex-col h-screen bg-indigo-600">
     <div class="m-3 mb-auto">
       <h1 class="mt-10 text-xl text-left text-indigo-100">
         Meet the developers who design and work together on this app...
@@ -18,9 +18,9 @@
         </h2>
       </div>
 
-      <div class="flex items-center justify-start mt-40">
+      <div class="flex items-center justify-start mt-20">
         <div class="mx-auto w-full">
-          <h1 class="text-2xl font-sm text-indigo-100">Contact us</h1>
+          <h1 class="text-xl font-sm text-indigo-100">Contact us</h1>
           <p class="mt-3 text-indigo-100">
             Email us at help@domain.com or message us here:
           </p>
