@@ -5,8 +5,9 @@
         "This project motivates us and so does the journey that lies ahead."
       </h1>
       <h2 class="mt-40 text-2xl text-center text-indigo-100">
-        <span class="text-6xl">UrGoCab</span> is a transport app that lets you
-        get around the city with taxi or a private car with a driver.
+        <span class="text-6xl">UrTravelApp</span> is the perfect travel
+        companion app that lets you organized your travel plans, get around the
+        city and personalized your travel ideas.
       </h2>
     </div>
   </div>
