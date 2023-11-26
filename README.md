@@ -16,5 +16,11 @@ Say <i>Hola</i> to <b>UrTravelApp</b>, a perfect travel companion app that lets 
 
 4. <b>MORE FEATURES TO COME!</b>
 
-APP DEVELOPERS:
+## Disclaimer:
+
+GoogleMaps will be replaced by an open source Map API services
+Most improvements require Backend technology
+
+### APP DEVELOPERS:
+
 <i>Ailyn & Javier</i>
