@@ -1,4 +1,4 @@
-# UrGoCab
+# UrTravelApp
 
 This application is our <b>final project</b> for the <b>Front End Developer Course</b> using <b>Vue.js, Vue Router, API</b> and <b>Firebase</b>.
 
