@@ -18,9 +18,10 @@ Say <i>Hola</i> to <b>UrTravelApp</b>, a perfect travel companion app that lets 
 
 ## Disclaimer:
 
-This project is intended to showcase our knowledge and skills in Front End Web Development using technologies like Vue.js, Vue Router, CSS Tailwind, Firebase and APIs.
-Google Maps will be replaced with OpenStreetMap
-Most improvements requires Back End technology
+1. This project is intended to showcase our knowledge and skills in Front End Web Development using technologies like Vue.js, Vue Router, CSS Tailwind, Firebase and APIs.
+2. Google Maps will be replaced with OpenStreetMap
+3. Most improvements requires Back End technology
 
-###APP DEVELOPERS:
+### APP DEVELOPERS:
+
 <i>Ailyn & Javier</i>
